@@ -31,15 +31,11 @@ function Products() {
 
 
     const handlePtype = async (title) => {
-        console.log('====================================');
-        console.log(title);
-        console.log('====================================');
+       
 
         axios.post(`api/packages/getallpackagebytitle`, { packagetitle: title })
             .then(function (response) {
-                console.log('====================================');
-                console.log(response);
-                console.log('====================================');
+             
                 dispatch({
                     type: "getPackages",
                     payload: response.data
