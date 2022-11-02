@@ -11,7 +11,7 @@ function Products() {
     const { packageame, offers, price, packageType } = useSelector((state) => state.order);
     const { allProducts, allPackage } = useSelector((state) => state.products);
     console.log(allPackage);
-    const scrollRef = useHorizontalScroll()
+    const scrollRef = useHorizontalScroll();
     const [allOffers, setAlloffers] = useState();
     const [isOrder, setisOrder] = useState(false);
     const [details, setDetails] = useState({
